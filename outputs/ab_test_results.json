@@ -1,0 +1,38 @@
+{
+  "data_checks": {
+    "rows": 588101,
+    "unique_users": 588101,
+    "duplicate_user_ids": 0,
+    "missing_values": 0,
+    "groups": [
+      "ad",
+      "psa"
+    ]
+  },
+  "control": {
+    "users": 23524,
+    "conversions": 420,
+    "rate_pct": 1.785
+  },
+  "ad": {
+    "users": 564577,
+    "conversions": 14423,
+    "rate_pct": 2.555
+  },
+  "absolute_lift_pp": 0.769,
+  "relative_uplift_pct": 43.1,
+  "z_statistic": 7.37,
+  "p_value": 1.7052807161559714e-13,
+  "ci_95_difference_pp": [
+    0.595,
+    0.943
+  ],
+  "estimated_incremental_conversions_in_ad_group": 4343,
+  "scenario_value_per_conversion": 25,
+  "scenario_incremental_value": 108575,
+  "caveats": [
+    "Group sizes are heavily imbalanced; random-assignment integrity cannot be verified from this file alone.",
+    "Exposure timing and volume patterns are descriptive, not causal.",
+    "The $25 value per conversion is a scenario because the dataset contains no revenue field."
+  ]
+}

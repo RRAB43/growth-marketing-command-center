@@ -1,0 +1,19 @@
+{
+  "rows": 10000,
+  "unique_users": 2847,
+  "converting_users": 2381,
+  "journey_rule": "Touches through the user's first recorded conversion",
+  "most_overcredited_by_last_touch": {
+    "channel": "Social Media",
+    "difference_pp": 0.64
+  },
+  "most_undercredited_by_last_touch": {
+    "channel": "Search Ads",
+    "difference_pp": -0.6
+  },
+  "limitations": [
+    "The file covers roughly two days and is suitable for model comparison, not budget forecasting.",
+    "Attribution assigns descriptive credit; it does not estimate incremental causal impact.",
+    "Repeated conversion flags are handled by ending each journey at the first conversion."
+  ]
+}

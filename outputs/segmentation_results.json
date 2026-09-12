@@ -1,0 +1,19 @@
+{
+  "data_checks": {
+    "rows": 2240,
+    "duplicate_customer_ids": 0,
+    "missing_income": 24,
+    "birth_year_below_1940": 3,
+    "income_above_200000": 1
+  },
+  "top_segment_by_spend": "At Risk",
+  "top_segment_customer_share_pct": 16.0,
+  "top_segment_spend_share_pct": 31.5,
+  "best_campaign": "Campaign 6",
+  "best_campaign_acceptance_rate_pct": 14.91,
+  "limitations": [
+    "RFM labels are rule-based prioritization aids, not causal targeting effects.",
+    "Income is not imputed for segmentation; outliers are reported and excluded only from income-specific analysis.",
+    "Spend fields are treated as dataset monetary units because no currency is specified."
+  ]
+}
