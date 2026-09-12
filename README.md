@@ -2,7 +2,7 @@
 
 An end-to-end portfolio case study across experimentation, customer segmentation, attribution-model sensitivity, executive reporting, and AI-ready workflow design. The project analyzes three public datasets containing 600K+ rows without falsely joining unrelated users across sources.
 
-**Live dashboard:** add your GitHub Pages URL after publishing.
+**Live dashboard:** [Open the interactive Growth Marketing Command Center](https://rrab43.github.io/growth-marketing-command-center/dashboards/)
 
 ## Executive summary
 
@@ -13,12 +13,12 @@ An end-to-end portfolio case study across experimentation, customer segmentation
 
 ## Business questions
 
-| Module | Decision |
-|---|---|
-| Experimentation | Did the ad treatment cause a detectable conversion lift, and is the effect large enough to evaluate economically? |
-| Segmentation | Which customer groups deserve retention, upsell, or reactivation tests? |
-| Attribution | How sensitive is channel credit to first-touch, last-touch, or linear rules? |
-| Executive reporting | How can validated outputs become a repeatable leadership brief? |
+| Module              | Decision                                                                                                          |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Experimentation     | Did the ad treatment cause a detectable conversion lift, and is the effect large enough to evaluate economically? |
+| Segmentation        | Which customer groups deserve retention, upsell, or reactivation tests?                                           |
+| Attribution         | How sensitive is channel credit to first-touch, last-touch, or linear rules?                                      |
+| Executive reporting | How can validated outputs become a repeatable leadership brief?                                                   |
 
 ## Reproducible workflow
 
@@ -52,25 +52,25 @@ All analyses completed. Review outputs/ and WEEKLY_BRIEF.md.
 
 The source contains one row per user and no missing values or duplicate user IDs. The treatment/control allocation is highly imbalanced (564,577 versus 23,524), so assignment integrity should be validated before rollout.
 
-| Metric | PSA control | Ad treatment |
-|---|---:|---:|
-| Users | 23,524 | 564,577 |
-| Conversions | 420 | 14,423 |
-| Conversion rate | 1.785% | 2.555% |
+| Metric          | PSA control | Ad treatment |
+| --------------- | ----------: | -----------: |
+| Users           |      23,524 |      564,577 |
+| Conversions     |         420 |       14,423 |
+| Conversion rate |      1.785% |       2.555% |
 
 The analysis uses a two-sided pooled two-proportion z-test and an unpooled 95% confidence interval for the absolute difference. A $25 value-per-conversion scenario suggests approximately $108.6K of incremental value across the treatment population, but this is explicitly a scenario because the dataset contains no revenue or cost field.
 
 ## RFM action framework
 
-| Segment | Customer share | Spend share | Recommended next test |
-|---|---:|---:|---|
-| At Risk | 16.0% | 31.5% | Randomized win-back offer |
-| Champions | 13.6% | 27.7% | Referral or early-access test |
-| Needs Attention | 20.0% | 19.7% | Preference-data collection |
-| Loyal | 10.0% | 9.4% | Cross-sell personalization |
-| Hibernating | 21.6% | 5.2% | Low-cost reactivation |
-| Can't Lose Them | 2.4% | 4.6% | High-value service recovery |
-| New / Promising | 16.4% | 1.9% | Second-purchase onboarding |
+| Segment         | Customer share | Spend share | Recommended next test         |
+| --------------- | -------------: | ----------: | ----------------------------- |
+| At Risk         |          16.0% |       31.5% | Randomized win-back offer     |
+| Champions       |          13.6% |       27.7% | Referral or early-access test |
+| Needs Attention |          20.0% |       19.7% | Preference-data collection    |
+| Loyal           |          10.0% |        9.4% | Cross-sell personalization    |
+| Hibernating     |          21.6% |        5.2% | Low-cost reactivation         |
+| Can't Lose Them |           2.4% |        4.6% | High-value service recovery   |
+| New / Promising |          16.4% |        1.9% | Second-purchase onboarding    |
 
 These labels prioritize hypotheses; they do not prove that a particular intervention will work. Each recommendation should be tested against a holdout.
 
